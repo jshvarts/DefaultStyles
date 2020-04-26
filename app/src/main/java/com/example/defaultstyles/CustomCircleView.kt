@@ -15,12 +15,18 @@ private const val DEFAULT_HAS_BORDER = false
 class CustomCircleView : View {
 
     constructor(context: Context) : this(context, null)
-    constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, 0)
+    constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, DEFAULT_STYLE_ATTR)
     constructor(
         context: Context,
         attrs: AttributeSet?,
         defStyleAttr: Int
-    ) : super(context, attrs, defStyleAttr) {
+    ) : this(context, attrs, defStyleAttr, DEF_STYLE_RES)
+    constructor(
+        context: Context,
+        attrs: AttributeSet?,
+        defStyleAttr: Int,
+        defStyleRes: Int
+    ) : super(context, attrs, defStyleAttr, defStyleRes) {
         val ta = context.obtainStyledAttributes(
             attrs,
             R.styleable.CustomCircleView,
