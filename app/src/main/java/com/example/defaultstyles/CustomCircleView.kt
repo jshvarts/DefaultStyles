@@ -20,7 +20,8 @@ class CustomCircleView : View {
         context: Context,
         attrs: AttributeSet?,
         defStyleAttr: Int
-    ) : this(context, attrs, defStyleAttr, DEF_STYLE_RES)
+    ) : this(context, attrs, defStyleAttr, DEFAULT_STYLE_ATTR)
+
     constructor(
         context: Context,
         attrs: AttributeSet?,
