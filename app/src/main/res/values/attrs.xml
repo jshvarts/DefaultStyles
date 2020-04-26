@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DefaultStylesTheme">
+        <attr name="circleViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomCircleView">
+        <attr name="hasBorder" format="boolean" />
+    </declare-styleable>
+</resources>
